@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import ClassComponent from './Coponents/ClassComponent';
+import FunctionComp from './Coponents/FunctionComp';
 
 function App() {
+  const age=50;
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>{age}</h1>
+      <ClassComponent old={age} car="Bwv"  home="benz" bag="sari"/>
+     <FunctionComp old ={age+age } color="yellow"/>
     </div>
   );
 }
